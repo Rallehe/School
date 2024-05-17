@@ -1,0 +1,4 @@
+FileName: C:\Users\rasmu\Desktop\Yrgo-OOP\EgnaOvningar\Uppgift 1\NavySeals.txt
+Date: 2022-11-20T13:49:36.357103500
+Words processed: 287
+Total unique words: 174

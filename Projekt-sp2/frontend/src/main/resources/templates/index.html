@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+    <script defer type="text/javascript" th:src="@{/js/script.js}"></script>
+    <title>Microservices Frontend</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to the Rental Company</h1>
+        <nav>
+            <button id="homeButton" th:onclick="backHome()">Home</button>
+            <button id="8081/buildings" th:onclick="showData('8081/buildings')">See Buildings</button>
+            <button id="8084/apartments" th:onclick="showData('8084/apartments')">See Apartments</button>
+            <button id="8083/janitors" th:onclick="showData('8083/janitors')">See Janitors</button>
+            <button id="8082/guests" th:onclick="showData('8082/guests')">See Guests</button>
+        </nav>
+
+        <main id="main">
+            <h2>Where your dream of the perfect home becomes true!</h2>
+        </main>
+
+
+    </div>
+
+
+</body>
+</html>

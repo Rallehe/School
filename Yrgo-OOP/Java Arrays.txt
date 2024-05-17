@@ -1,0 +1,67 @@
+1. Show two ways to declare a one­dimensional array of 12 doubles.
+
+2. Show how to initialize a one­dimensional array of integers to the values 1 through 5.
+
+3. Write a program that uses an array to find the average of 10 double values. Use any
+10 values you like.
+
+4. Change the sort in Try This 5­1 so that it sorts an array of strings. Demonstrate that
+it works.
+
+5. What is the difference between the String methods indexOf( ) and lastIndexOf(
+)?
+
+6. Since all strings are objects of type String, show how you can call the length( ) and
+charAt( ) methods on this string literal: "I like Java".
+
+7. Expanding on the Encode cipher class, modify it so that it uses an eight­character
+string as the key.
+
+8. Can the bitwise operators be applied to the double type?
+
+9. Show how this sequence can be rewritten using the ? operator.
+
+if (x < 0) 	y = 10;
+else y = 20;
+
+10. In the following fragment, is the & a bitwise or logical operator? Why?
+
+boolean a, b;
+//...
+if (a & b) ...
+
+11. Is it an error to overrun the end of an array? Is it an error to index an array with a
+negative value?
+
+12. What is the unsigned right­shift operator?
+
+13. Rewrite the MinMax class shown earlier in this chapter so that it uses a for­each
+style for loop.
+
+14. Can the for loops that perform sorting in the Bubble class shown in Try This 5­1
+be converted into for­each style loops? If not, why not?
+
+15. Can a String control a switch statement?
+
+16. What type name is reserved for use with local variable type inference?
+
+17. Show how to use local variable type inference to declare a boolean variable called
+done that has an initial value of false.
+
+18. Can var be the name of a variable? Can var be the name of a class?
+
+19. Is the following declaration valid? If not, why not.
+
+var [] avgTemps = new Double [7];
+
+20. Is the following declaration valid? If not, why not?
+
+var alpha = 10, beta = 20;
+
+21. In the show( ) method of the ShowBits class developed in Try This 5­3, the local
+variable mask is declared as shown here:
+Change this declaration so that it uses local variable type inference. When doing so, be
+sure that mask is of type long (as it is here), and not of type int
+
+long mask = 1;
+

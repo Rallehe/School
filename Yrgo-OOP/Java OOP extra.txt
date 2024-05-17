@@ -1,0 +1,149 @@
+Referenser, konstruktorer, scope med mera
+Interminet delas upp i två bitar, på stacken och heapen.
+Stacken är som en stapel, vi lägger variblerna på hög.
+Heapen lägger vi dynamisk data, data som vi skapar med (new)
+Där sparas medlems variablerna.
+Standard konstruktor är en konstruktor utan argument
+
+När vi skapar ett objekt med new så allokeras minne på heapen.
+Vi kan ha flera variabler som refererar till samma objekt.
+Bara när vi skapar (new) så refererar vi till heapen
+
+Java har automatisk skräpsamling
+Kollar om det finns objekt som inte används, då raderas det från minnet så det kan användas till annat
+
+Istället för att ge variablerna ett värde när vi skapar dom så gör vi en metod
+som körs när vi kör new och tilldelar dom ett start värde.
+Döp metoden till samma som klassen
+Gör vi det så tvingar det oss att alltid sätta värden.
+Java kommer med en inbygd konstruktor.
+Gör vi en egen konstruktor så försvinner standard konstruktorn
+
+Repetition:
+Break avslutar loopen helt.
+Continue avslutar det här varvet i loopen och fortsätter sedan med med loopen från start
+Continue (Fortsätter loopen men från start)
+
+Klasser har vi struktur.
+Klassen är ritningen av ett objekt
+Objekten innehåller samma typ data som först skapades i klassen, men med olika värden
+Vi skapar ett nytt objekt med (new)
+Konstruktorn retunerar inget men den tvingar oss att sätta startvärden
+Dela koden i olika filer (processer i en, inmatning/utmatning i en)
+
+?En metod måste vara Static för att kunna anropas från Main metoden.
+
+Mer om Metoder:
+Man kan (överlagra metoder). Dom kan alltså ha samma namn så länge dom har olika indata
+Private och public är vanligast att använda på sina metoder och klasser.
+Man bör tänka att man ska använda private så långt det går.
+Allt som vi inte vill att andra ska peta på ska vara private.
+Medlemsvaribler ska vara private 99% av alla gånger.
+Med hjälp av getters och setters så kan vi skicka in data till dom ändå, fast på ett säkert sätt.
+Static gör att fältet blir gemensamt för alla instanser.
+
+Interface och paket:
+Vi använder intefaces för att enkelt kunna återanvända kod.
+Interface säger "det här kan vi göra"
+"bilens interface" = ratt, pedaler, växelspak mm.
+Ett interface ser lite ut som en klass.
+I ett interface listar man sina metoder, t.ex, en bil ska kunna svänga, gasa, bromsa, byta växel mm.
+Använder man ett interface så måste man använda alla metoder som ingår i det interfacet, 
+men man kan lägga till extra.
+Alla metoder i ett interface måste vara public.
+Man kan använda ett interface i ett annat med hjälp av "extends".
+Gör man det så kallar man på den sista interfacen (om man vill använda alla metoder)
+Vi kan declarera variabler i interface, gör vi det så blir dom konstanter, dvs public static final.
+Det finns default metoder i interface. Den kan bara använda standard Java och det som finns i samma interace
+Vi kan inte komma åt medlemsvariabler som använder en interface från början.
+Det går inte att ha två deafult i samma interface (även om man implementerar en)
+Får man det felet så kan man lägga till en default i det interface som problemet uppstår.
+
+Organisera programmet i olika paket:
+Liknande funktioner
+Liknande syfte
+"Alla bra och ha"
+
+Strukturen brukar vara nått i stilen:
+mittpaket:
+mittpaket.gui.startvy
+mittpaket.gui.aboutvy
+mittpaket.db.dao
+mittpaket.dp.entity
+
+Alla namn på paket ska bara innehålla småbokstäver.
+Paketnamnen ska vara unika.
+Klasser kan snacka med varandra fritt om dom ligger i samma paket.
+Gör dom inte det så måste vi skriva in paketnamnet + klassen
+Öppna projekt mappen, inte en smapp långt ner i projektet.
+-cp eller -classpath för att köra.
+
+Ska man lägga till fler sökvägar kan man skriver man "den man ska lägga till" + hela sökvägen
+Räcker med att klicka på Start knappen i java.
+
+Arrayer, listor och strängar:
+Arrayer är som en fysisk lista, men alla objekt måste ha samam typ.
+Arrayer har en fat storlek.
+Vill man komma åt ett element i arrayen så kallar man på dom med en siffra, man börjar räkna i arrayen från 0
+Arrayer stödjer effektiv random-access, dvs att det går lika snabbt att komma åt alla objekt i arrayen.
+int[] intArray = new int[100]; skapar en int array med 100 platser.
+int[] intArray = { 1, 2, 3, 4, }; skapar en int array med 4 platser och ger dom talen 1, 2 ,3 4. Dom får index 0, 1, 2, 3.
+Storleken på en lista måste inte vara konstant, man kan t.ex sätta storleken med hjälp av en scanner.
+Foreach loopar igenom en lista eller array, element för element.
+Ska vi skriva till en array så måste vi använda fori loop.
+Arrayer går inte att kopiera hur man vill.
+Vill man kopiera en array får man använda Arrays.copyOf.
+Man kan även göra arrayen längre och då läggs nollor på efter orginal arrayen tar slut.
+
+List är som en fysisk lista som växer varje gång man lägger till något.
+List <String> myList = new ArrayList<>;
+Dom vanligaste implementationen av lists är ArrayList och LinkedList
+Dom funkar lika men är olika snabba beroende på vad man ska jag
+ArrayList bör vara standard valet.
+Foreach loopar man en lista loopar den lika som en array
+Gör man en int array så får alla bitar en fast storlek, t.ex en int blir 32 bitar. Även om ett index innehåller 42 och ett annat 54321.
+Listor kan bara spara klasser, vill man spara t.ex en int i den får man använda en (Integer).
+Lägger man till något i mitten av en lista så läggs den till och allt efter puttas up en index.
+
+
+Strängar i java använder siig av UTF-16 dvs 16 bitar stort
+
+Arv:
+För att göra ett arv lägger man till (extends + klassen) man vill få in
+Vi måste fortfarande ha en konstruktor.
+Man kan bara ärva av en klass. Men kan kan göra ett oändligt långt led.
+Anropar vi super så anropar vi basens konstruktor.
+Instaceof kollar vad klassen är en instans av.
+Man bör inte använda sig av instanceof.
+Man kan hindra av om man markerar en klass som final
+Man kan hindra override på metoder genom att markera metoden som final
+Samma med variabler.
+
+Undantag och felhantering:
+Man kan kombinera två undantag med |
+Finally kan man skriva efter en try/catch, finally kommer alltid att köras, även om det uppstår ett undantag
+Exception är kontrollerade undantag
+RuntimeException är okontrollerade undantag
+Man kan göra sina undantag, då behöver vi ärva från Exception eller RuntimeException
+Man bör välja RuntimeException
+Man ska aldrig ärva från Throwable eller Error
+Gör vi en egen så behöver vi tre konstruktorer
+Första är en tom metod
+Andra är en som har String Message (super)
+Tredje är en där vi tar in String message (super), Throwable cause.
+Alla kontrollerade undantag måste vi deklarera med throws eller hantera på annat sätt
+Fånga aldrig ett undantag utan att hantera det.
+Fånga så specifikt undantag som möjligt.
+Fånga ALDRIG Throwable.
+Skicka alltid med det gamla undantaget om man kastar ett nytt.
+Inkludera relevant information i undantags meddelande.
+"throw early, catch late"
+Fånga undantag när vi kan göra något med dom.
+Använd aldrig undantag för flödesstyrning
+Återställ alltid interrput när du fångar InterruptedException
+Dokumentera vilka undantag dina metoder kaster.
+
+
+
+
+

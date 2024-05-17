@@ -1,0 +1,24 @@
+JABG:
+40 (Operator)
+49 (The Java Keywords)
+63 (Character Escape Sequences)
+69 (Arithmetic Operators)
+72 (Relational And Logical Operators)
+78 (Shorthand Assignments (+=))
+82 (Operator Precedence)
+123 (Break to label)
+131 (Nested Loops)
+150 (Boolean class)
+
+
+CMD:
+cd +  map
+(C:\Users\rasmu>cd C:\Users\rasmu\OneDrive\Desktop\Yrgo.java\Lektion2)
+Välj fil
+
+javac + filnamn.java (För att kompilera filen (Måste göras efter ändringar i programmet))
+java + filnamn
+
+printf: %s, stringName %d, intName
+System.out.printf(Hello %s! You are %d years old., name, age)
+För att jämnföra strings (.equals)

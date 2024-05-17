@@ -1,0 +1,24 @@
+@use 'node_modules/bootstrap/scss/bootstrap' with (
+$primary: rgb(87, 7, 179),
+$info: rgb(228, 128, 15),
+);
+
+
+body {
+    // background: url(https://wallpapers.com/images/hd/viking-longship-nordic-sea-txnyyb2j0rz8x9ut.jpg) no-repeat;
+
+    background: url(https://th.bing.com/th/id/OIG.l.ebq9_IsY9Kd4bsuqKA?pid=ImgGn) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+.buttonSize {
+    width: 90px !important;
+    height: 60px !important;
+}
+  
+
+

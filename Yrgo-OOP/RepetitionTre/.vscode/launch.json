@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ExNine",
+            "request": "launch",
+            "mainClass": "ExNine",
+            "projectName": "RepetitionTre_d828d6a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExEight",
+            "request": "launch",
+            "mainClass": "ExEight",
+            "projectName": "RepetitionTre_d828d6a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExSix",
+            "request": "launch",
+            "mainClass": "ExSix",
+            "projectName": "RepetitionTre_d828d6a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExFive",
+            "request": "launch",
+            "mainClass": "ExFive",
+            "projectName": "RepetitionTre_d828d6a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExOne",
+            "request": "launch",
+            "mainClass": "ExOne",
+            "projectName": "RepetitionTre_d828d6a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExThree",
+            "request": "launch",
+            "mainClass": "ExThree",
+            "projectName": "RepetitionTre_d828d6a0"
+        }
+    ]
+}
